@@ -13,20 +13,22 @@ Esta es una API para gestionar el cambio de contraseñas de los sistemas interno
 ## Instalación
 
 1.  Clona este repositorio:
+
     ```bash
     git clone <URL_DEL_REPOSITORIO>
     cd api-cambiopassword
     ```
 
 2.  Instala las dependencias del proyecto:
+
     ```bash
     npm install
     ```
 
-3.  Crea un archivo de entorno `.env` a partir del archivo `.env dev` y configura las variables necesarias, como las credenciales de la base de datos y las rutas a los certificados SSL.
+3.  Crea un archivo de entorno `.env` a partir del archivo `.env.dev` y configura las variables necesarias, como las credenciales de la base de datos y las rutas a los certificados SSL.
 
     ```bash
-    cp ".env dev" .env
+    cp .env.dev .env
     ```
 
 ## Uso
@@ -47,7 +49,7 @@ El servidor se ejecutará en `https://localhost:3000`.
 
 ## Scripts Disponibles
 
--   `npm test`: (Actualmente no configurado) Ejecuta los tests.
+- `npm test`: (Actualmente no configurado) Ejecuta los tests.
 
 ## Estructura del Proyecto
 
@@ -55,7 +57,7 @@ El servidor se ejecutará en `https://localhost:3000`.
 /
 ├── public/             # Contiene los archivos del frontend (HTML, CSS, JS)
 ├── src/                # Código fuente de la aplicación (actualmente vacío)
-├── .env dev            # Archivo de ejemplo para las variables de entorno
+├── .env.dev            # Archivo de ejemplo para las variables de entorno
 ├── .gitignore          # Archivos y carpetas ignorados por Git
 ├── ecosystem.config.js # Configuración para el gestor de procesos PM2
 ├── package.json        # Metadatos y dependencias del proyecto
@@ -65,19 +67,19 @@ El servidor se ejecutará en `https://localhost:3000`.
 
 ## Endpoints de la API
 
--   `POST /validar`: Valida un usuario y contraseña existentes.
--   `POST /cambiar`: Cambia la contraseña de un usuario.
--   `GET /sugerir`: Devuelve una sugerencia de contraseña segura.
--   `GET /chpsw/:hash`: Muestra la página para resetear la contraseña usando un hash único.
--   `POST /chpsw/:hash`: Procesa el reseteo de la contraseña.
+- `POST /validar`: Valida un usuario y contraseña existentes.
+- `POST /cambiar`: Cambia la contraseña de un usuario.
+- `GET /sugerir`: Devuelve una sugerencia de contraseña segura.
+- `GET /chpsw/:hash`: Muestra la página para resetear la contraseña usando un hash único.
+- `POST /chpsw/:hash`: Procesa el reseteo de la contraseña.
 
 ## Dependencias Principales
 
--   [Express](https://expressjs.com/): Framework web para Node.js.
--   [pg](https://node-postgres.com/): Cliente de PostgreSQL para Node.js.
--   [bcrypt](https://www.npmjs.com/package/bcrypt): Librería para hashear contraseñas.
--   [dotenv](https://www.npmjs.com/package/dotenv): Carga variables de entorno desde un archivo `.env`.
--   [tailwindcss](https://tailwindcss.com/): Framework de CSS.
+- [Express](https://expressjs.com/): Framework web para Node.js.
+- [pg](https://node-postgres.com/): Cliente de PostgreSQL para Node.js.
+- [bcrypt](https://www.npmjs.com/package/bcrypt): Librería para hashear contraseñas.
+- [dotenv](https://www.npmjs.com/package/dotenv): Carga variables de entorno desde un archivo `.env`.
+- [tailwindcss](https://tailwindcss.com/): Framework de CSS.
 
 ## Autor
 
