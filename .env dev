@@ -1,0 +1,10 @@
+DB_HOST=[host]
+DB_PORT=5432
+DB_NAME={db}
+DB_USER={user}
+DB_PASS={pass}
+DB_SSL=true
+
+SSL_KEY_PATH={path}/{name}.key
+SSL_CERT_PATH={path}/{name}.crt
+SSL_CA_PATH={path}/{name}.ca-bundle

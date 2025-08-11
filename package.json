@@ -1,0 +1,21 @@
+{
+  "name": "app-cambio-password",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jhons W.",
+  "license": "ISC",
+  "description": "api de cambio de contraseña de sistemas",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "tailwindcss": "^4.1.11"
+  }
+}
